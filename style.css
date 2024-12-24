@@ -19,7 +19,7 @@ h1 {
 }
 
 .container {
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ pre {
 
 .line {
     height: 2.7px;
-    width: 330px;
+    width: 350px;
     opacity: 0;
     transform: translateX(100%);
     animation: slideIn 0.5s forwards;
