@@ -19,7 +19,7 @@ h1 {
 }
 
 .container {
-    padding: 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
