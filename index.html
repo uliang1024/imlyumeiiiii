@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCII Art Example</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tree.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playwrite+AU+VIC+Guides&family=Playwrite+IE+Guides&display=swap" rel="stylesheet">
@@ -14,8 +13,13 @@
 
 <body>
     <div class="container">
-        <h1>Merry Christmas Eve!</h1>
-        <pre id="asciiArt">
+        <p id="text" style="text-align: center;">
+            平安夜快樂，這段時間辛苦你了。<br> 我不太會說話，我也不是渣男，請放心。<br> 我會一直等你跟我在一起<br><del style="opacity: 0.1; font-size: 12px; height: 1px;">等到為我穿上婚紗的那一天。</del><br>好不要說太多，你會聽不下去 ㄞㄋ
+        </p>
+        <button id="startButton">講重點💢</button>
+        <p id="more" style="text-align: center;">如果覺得上面的字太多的話請點選按鈕<br>開聲音哈哈</p>
+        <h1 style="display: none;">Merry Christmas Eve!</h1>
+        <pre id="asciiArt" style="display: none;">
         <!-- 在這裡插入你的 ASCII 藝術 -->
         ._____.   .__  .__   
         |__\_ |__ |  | |  |  
@@ -24,9 +28,13 @@
         |__||___  /____/____/
                 \/           
     </pre>
-        <p>Love you ❤️</p>
-        <span>2024.6.16 ~ NOW</span>
+        <p id="love" style="display: none;">Love you ❤️</p>
+        <span id="time" style="display: none;">2024.6.16 ~ NOW</span>
     </div>
+    <audio id="backgroundMusic" loop>
+        <source src="its-you.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="script.js"></script>
 </body>
 

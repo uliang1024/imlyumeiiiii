@@ -6,6 +6,9 @@ body {
     background-color: #282c34;
     overflow: hidden;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -69,4 +72,20 @@ pre {
 p,
 span {
     color: #8c9ca1;
+}
+
+button#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button#startButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
